@@ -1,0 +1,61 @@
+<scene>
+  <description text="Two similarly sized particles orbiting one another. Intended as a test when multiple particles are in motion."/>
+
+  <duration time="100.0"/>
+  <integrator type="symplectic-euler" dt="0.01"/>
+  <maxsimfreq max="500.0"/>
+
+  <particle m="100.0" px="0.0" py="0.0" vx="0.0" vy="0.0" fixed="1" radius="1.0"/>
+  
+  <particle m="1.0" px="10.0" py="0.0" vx="0.0" vy="20.0" fixed="0" radius="0.05"/>
+  
+    <particle m="1.0" px="10.1" py="0.0" vx="0.0" vy="20.0" fixed="0" radius="0.05"/>
+   
+   <particle m="1.0" px="9.9" py="0.0" vx="0.0" vy="20.0" fixed="0" radius="0.05"/>
+   
+   <particle m="1.0" px="10.0" py="0.1" vx="0.0" vy="20.0" fixed="0" radius="0.05"/>
+   
+   <particle m="1.0" px="10.0" py="-0.1" vx="0.0" vy="20.0" fixed="0" radius="0.05"/>
+
+
+  <edge i="1" j="2"/>
+  <springforce edge="0" k="20.0" l0="0.1" />
+<edge i="1" j="3"/>
+  <springforce edge="1" k="20.0" l0="0.1" />
+  
+  <edge i="1" j="4"/>
+  <springforce edge="2" k="20.0" l0="0.1" />
+
+<edge i="1" j="5"/>
+  <springforce edge="3" k="20.0" l0="0.1" />
+
+  <gravitationalforce i="0" j="1" G="40.0"/>
+  <gravitationalforce i="0" j="2" G="40.0"/>
+  
+  <gravitationalforce i="0" j="3" G="40.0"/>
+  
+  <gravitationalforce i="0" j="4" G="40.0"/>
+  
+  <gravitationalforce i="0" j="5" G="40.0"/>
+
+
+  
+
+  <particlecolor i="0" r="0.5" g="0.0" b="0.0"/>
+  <particlecolor i="1" r="0.0" g="0.0" b="1.0"/>
+   <particlecolor i="2" r="1.0" g="0.0" b="0.0"/>
+    <particlecolor i="3" r="0.0" g="1.0" b="0.0"/>
+
+  <backgroundcolor r="0.0" g="0.0" b="0.0"/>
+
+
+<particlepath i="0" duration="50.0" r="0.6" g="0.0" b="0.8"/>
+<particlepath i="1" duration="50.0" r="0.6" g="0.0" b="0.8"/>
+<particlepath i="2" duration="50.0" r="0.6" g="0.0" b="0.8"/>
+<particlepath i="3" duration="50.0" r="0.6" g="0.0" b="0.8"/>
+<particlepath i="4" duration="50.0" r="0.6" g="0.0" b="0.8"/>
+  
+  
+  
+</scene>
+

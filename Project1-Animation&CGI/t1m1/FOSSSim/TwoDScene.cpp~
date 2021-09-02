@@ -1,0 +1,14 @@
+#include "TwoDScene.h"
+
+scalar TwoDScene::computeKineticEnergy() const
+{
+  // Your code goes here!
+ 
+  
+  //return (1/2) * m.dot(v.array().square());
+  
+  //return -1.0;
+}
+
+
+double TwoDScene::pepe = 0.0;

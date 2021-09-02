@@ -1,0 +1,36 @@
+#include "SimpleGravityForce.h"
+
+void SimpleGravityForce::addEnergyToTotal( const VectorXs& x, const VectorXs& v, const VectorXs& m, scalar& E )
+{
+    assert( x.size() == v.size() ); // verificar tamaños vectores
+    assert( x.size() == m.size() ); // verificar tamaños vectores
+    assert( x.size()%2 == 0 );      // verificar que el vector tiene tamaño par.
+    
+    // Your code goes here!
+    
+       int num_particles = x.size() / 2;
+    scalar a = 0;
+    for (int i = 0; i < num_particles; ++i) {
+    	
+    	      	
+        a = a - (m.segment<2>(2*i)).cwiseProduct(m_gravity).dot(x.segment<2>(2*i));   //Multiplicamos masa por gravedad --> 
+    }
+    E = E + U;
+}
+
+void SimpleGravityForce::addGradEToTotal( const VectorXs& x, const VectorXs& v, const VectorXs& m, VectorXs& gradE )
+{
+    assert( x.size() == v.size() );
+    assert( x.size() == m.size() );
+    assert( x.size() == gradE.size() );
+    assert( x.size()%2 == 0 );
+    
+    // Your code goes here!
+    
+     int num_particles = x.size() / 2;
+    VectorXs gradU; gradU.resize(x.size()); gradU.fill(0);
+    for (int i = 0; i < num_particles; ++i) {
+        gradU.segment<2>(2*i) = - (m.segment<2>(2*i)).cwiseProduct(m_gravity);
+    }
+    gradE += gradU;
+}

@@ -1,0 +1,13 @@
+/home/yago/cursoAI/assignment-preview/t1m2/build/CMakeFiles/install.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/CMakeFiles/list_install_components.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/CMakeFiles/install/strip.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/CMakeFiles/install/local.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/CMakeFiles/rebuild_cache.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/CMakeFiles/edit_cache.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/FOSSSim/CMakeFiles/install.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/FOSSSim/CMakeFiles/list_install_components.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/FOSSSim/CMakeFiles/rebuild_cache.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/FOSSSim/CMakeFiles/FOSSSim.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/FOSSSim/CMakeFiles/edit_cache.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/FOSSSim/CMakeFiles/install/strip.dir
+/home/yago/cursoAI/assignment-preview/t1m2/build/FOSSSim/CMakeFiles/install/local.dir

@@ -1,0 +1,35 @@
+#include "SymplecticEuler.h"
+
+bool SymplecticEuler::stepScene( TwoDScene& scene, scalar dt )
+{
+  // Your code goes here!
+  
+
+  const VectorXs& m = scene.getM();  
+  
+  VectorXs& x = scene.getX();
+
+  
+  VectorXs& v = scene.getV();
+
+  VectorXs F(x.size());
+  
+  F.setZero();
+
+  scene.accumulateGradU(F);   //le aplica la fuerza del XML??
+
+  F *= -1.0;  //multiplica por menos uno  F *= -1.0  --> F = F * (-1.0)
+
+
+
+
+
+
+  return true;
+}
+
+
+
+
+
+

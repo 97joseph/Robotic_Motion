@@ -1,0 +1,21 @@
+<!-- Spells 'Hi' with paticles and edges. -->
+
+<scene>
+  <duration time="10.0"/>
+  <integrator type="explicit-euler" dt="0.1"/>
+  <maxsimfreq max="500.0"/>
+
+  <particle m="1.0" px="0.0" py="0.0" vx="1.0" vy="0.0" fixed="0" radius="0.4"/>
+  
+
+
+  <edge i="0" j="1" radius="0.01"/>
+
+
+  <particlecolor i="0" r="1.0" g="0" b="0.2"/>
+ 
+
+  <edgecolor i="0" r="0.9" g="0.0" b="0.3"/>
+
+
+</scene>
